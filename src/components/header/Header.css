@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10rem;
+    height: 3rem;
+}
+
+.header_menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}
+
+.header_menu > li:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+
+@media (max-width: 768px) {
+    .header > :nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    .mobile-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:var(--appColor);
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+    .header_menu{
+        flex-direction: column;
+        background: var(--appColor);
+        padding: 2rem;
+    }
+}
